@@ -640,3 +640,6 @@ world_pay_gateway:
 iats_payments:
   login: TEST88
   password: TEST88
+
+bitpay:
+  key: rKrahSl7WRrYeKRUhGzbvW3nBzo0jG4FPaL8uPYaoPk 
