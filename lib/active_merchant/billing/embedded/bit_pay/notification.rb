@@ -13,14 +13,14 @@ module ActiveMerchant #:nodoc:
             status == "Completed"
           end
 
+          def confirmed?
+            status == "Confirmed"
+          end
+
           # Status of transaction. List of possible values:
           # <tt>COMPLETE</tt>::
           def status
-            if params['status'].downcase == "complete"
-              "Completed"
-            else
-              "Failed"
-            end
+            params['status']
           end
 
           # Id of this transaction (uniq BitPay transaction id)
