@@ -13,6 +13,8 @@ module ActiveMerchant #:nodoc:
             add_field('currency', options[:currency])
             add_field('orderID', order)
             add_field('posData', order)
+            add_field('fullNotifications', 'true')
+            add_field('transactionSpeed', options[:transactionSpeed] || "high")
           end
 
           #required
